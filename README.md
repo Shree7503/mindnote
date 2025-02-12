@@ -1,50 +1,80 @@
-# React + TypeScript + Vite
+# MindNote
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MindNote is a powerful web application that allows users to generate summaries and mind maps from YouTube videos and PDF documents. Built with React and Next.js, it provides an intuitive interface for content analysis and visualization.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Summarize YouTube videos and PDF documents
+- Generate interactive mind maps using React Flow
+- Switch between summary and mind map views
+- Save and manage multiple summaries
+- Responsive design for various screen sizes
+- Dark mode support
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- React Flow
+- React Markdown
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Prerequisites
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Node.js (v14 or later)
+- npm or yarn
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/content-summarizer.git
+   cd content-summarizer
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Create a `.env.local` file in the root directory and add any necessary environment variables:
+   ```
+   NEXT_PUBLIC_API_URL=your_api_url_here
+   ```
+
+4. Run the development server:
+   ```
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. Open [http://localhost:5173](http://localhost:5173) in your browser to see the application.
+
+## Usage
+
+1. Choose between YouTube video or PDF document summarization.
+2. For YouTube videos, enter the video URL. For PDFs, upload the file.
+3. Click the "Summarize" button to generate a summary and mind map.
+4. Toggle between the summary and mind map views using the "Switch" button.
+5. Save summaries for future reference using the "Save Summary" button.
+6. View all saved summaries by clicking the "View All Summaries" button.
+
+## Project Structure
+
+## License
+
+
+## Acknowledgments
+
+- [Next.js](https://nextjs.org/)
+- [React Flow](https://reactflow.dev/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Markdown](https://github.com/remarkjs/react-markdown)
