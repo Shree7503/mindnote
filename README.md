@@ -69,7 +69,12 @@ MindNote is a powerful web application that allows users to generate summaries a
 ## Project Structure
 
 ## License
-
+Contribution & Licensing
+This project is developed and maintained by @Shree7503.
+Contributions are welcome! If you’d like to contribute, fork the repo and create a pull request.
+License: MIT License (Allows use, but requires credit).
+Connect & Support
+If you like this project, consider ⭐ starring the repo and sharing it with your network!
 
 ## Acknowledgments
 
